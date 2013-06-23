@@ -20,9 +20,9 @@ describe "StaticPages" do
       page.should_not have_selector('title', :text => '| Home')
     end
     
-    it "should have 'Jonah' in the p tag" do
+    it "should have 'Jonah' in the h2 tag" do
       visit '/static_pages/home'
-      page.should have_selector('p', :text => "Jonah")
+      page.should have_selector('h2', :text => "Jonah")
     end
         
   end
